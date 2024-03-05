@@ -37,7 +37,7 @@ then
       until [ $CUDAV != ' ' ]
       do
         PS3='Please Select one : '
-        select CUDAV in 11-0 11-1 11-2 11-3 11-4 11-5 No-GPU; do echo "Select CUDA Version : $CUDAV" ; break; done
+        select CUDAV in 11-0 11-1 11-2 11-3 11-4 11-5 12-1 No-GPU; do echo "Select CUDA Version : $CUDAV" ; break; done
       done 
       echo $CUDAV > /root/cudaversion.txt
       echo "" | tee -a /root/install_log.txt
@@ -50,7 +50,7 @@ then
         until [ $CUDAV != ' ' ]
         do
           PS3='Please Select one : '
-          select CUDAV in 11-7 No-GPU ; do echo "Select CUDA Version : $CUDAV" ; break; done
+          select CUDAV in 11-7 12-1 No-GPU ; do echo "Select CUDA Version : $CUDAV" ; break; done
         done
         echo $CUDAV > /root/cudaversion.txt
       else if [ $OS = "ubuntu2004" ]
