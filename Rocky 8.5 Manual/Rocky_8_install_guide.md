@@ -324,7 +324,7 @@ reboot
 
 ```bash
 # 사용할 CUDA 버전을 선택합니다.
-select CUDAV in 11-0 11-1 11-2 11-3 11-4 11-5; do echo "Select CUDA Version : $CUDAV" ; break; done
+select CUDAV in 11-0 11-1 11-2 11-3 11-4 11-5 12-1; do echo "Select CUDA Version : $CUDAV" ; break; done
 
 # Nvidia 저장소 생성 (Cuda,cudnn 설치를 위해)
 dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel8/x86_64/cuda-rhel8.repo
